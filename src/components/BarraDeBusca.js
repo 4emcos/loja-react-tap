@@ -11,8 +11,9 @@ import Badge from 'react-bootstrap/Badge';
 class BarraDeBusca extends Component {    
   render() {
     return (
-      <Navbar bg="dark" variant="dark" fixed="top">
-        <Navbar.Brand >Sodacaca Store</Navbar.Brand>
+
+      <Navbar bg="primary" variant="dark" fixed="top">
+        <Navbar.Brand >Toratora Store</Navbar.Brand>
         <Nav>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -30,6 +31,8 @@ class BarraDeBusca extends Component {
           </Navbar.Collapse>
         </Nav>
       </Navbar>
+
+
     );
   }
 }

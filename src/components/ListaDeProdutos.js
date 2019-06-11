@@ -10,8 +10,11 @@ const PRODUTOS_POR_LINHA = 4;
 class ListaDeProdutos extends Component {
   renderProduto = (linha) => {
     return (
-      <Row>
-        {linha.map((p) => (<ItemProduto produto={p} />))}
+      <Row className = "rowProdutos"> 
+
+          {linha.map((p) => (<ItemProduto produto={p} />))}
+    
+       
       </Row>
     );
   }
@@ -19,7 +22,9 @@ class ListaDeProdutos extends Component {
   render() {
     return (
       <Container>
+        <Row className = "rowProdutos">
         {Toolkit.splitArray(this.context.state.produtos, PRODUTOS_POR_LINHA).map(this.renderProduto)}
+        </Row>
       </Container>
     );
   }
